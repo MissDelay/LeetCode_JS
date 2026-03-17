@@ -1,0 +1,10 @@
+{
+  "name": "xhs-ai-track-dashboard",
+  "version": "1.0.0",
+  "description": "小红书AI赛道博主与选题分析应用",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check src/data.js && node --check src/insights.js && node --check public/app.js"
+  }
+}
