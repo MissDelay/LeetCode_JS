@@ -1,0 +1,156 @@
+:root {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1f2430;
+  background: #f4f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 24px auto 40px;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.sub {
+  color: #667085;
+  margin: 8px 0 18px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tab {
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  color: #1f2430;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #3b5bfd;
+  color: #fff;
+  border-color: #3b5bfd;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.hint {
+  color: #667085;
+  font-size: 14px;
+}
+
+.blogger-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.blogger-item {
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: #fcfcfd;
+}
+
+.blogger-item img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.blogger-name {
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.muted {
+  color: #667085;
+  font-size: 12px;
+}
+
+.empty {
+  color: #98a2b3;
+  padding: 8px 0;
+}
+
+.list {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background: #eef4ff;
+  color: #1d4ed8;
+  border: 1px solid #c7d7fe;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+select,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  background: #3b5bfd;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.analysis {
+  margin-top: 12px;
+  border-top: 1px dashed #e4e7ec;
+  padding-top: 12px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}

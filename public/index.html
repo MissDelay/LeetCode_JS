@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI赛道内容助手</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>AI赛道内容助手</h1>
+      <p class="sub">模块化工作台：博主分析 / 选题分析</p>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="blogger">博主分析</button>
+        <button class="tab" data-tab="topic">选题分析</button>
+      </div>
+
+      <section id="tab-blogger" class="tab-panel active">
+        <div class="card">
+          <h2>Top30 热门博主（AI赛道）</h2>
+          <p class="hint">点击头像或名称查看详细分析：个人特点、内容特点、受欢迎原因、最受欢迎5篇与最近5篇。</p>
+          <div id="bloggerGrid" class="blogger-grid"></div>
+        </div>
+        <div class="card" id="bloggerDetailWrap">
+          <h2>博主详情</h2>
+          <div id="bloggerDetail" class="empty">请选择左侧博主查看详情</div>
+        </div>
+      </section>
+
+      <section id="tab-topic" class="tab-panel">
+        <div class="card">
+          <h2>今日热门话题（AI赛道）</h2>
+          <div id="hotTopics" class="topic-chips"></div>
+        </div>
+
+        <div class="card">
+          <h2>自定义选题方向分析</h2>
+          <label>目标受众</label>
+          <select id="audience">
+            <option>默认</option>
+            <option>新手</option>
+            <option>创作者</option>
+            <option>创业者</option>
+            <option>职场人</option>
+          </select>
+          <label>输入你的选题方向/灵感</label>
+          <textarea id="idea" rows="4" placeholder="例如：AI智能体做个人IP增长"></textarea>
+          <button id="analyzeIdeaBtn">分析并推荐选题</button>
+          <div id="topicAnalysis" class="analysis empty">请输入灵感后进行分析</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
